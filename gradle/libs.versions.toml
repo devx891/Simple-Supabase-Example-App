@@ -1,0 +1,26 @@
+[versions]
+agp = "9.1.0"
+appcompat = "1.7.1"
+material = "1.14.0"
+constraintlayout = "2.2.1"
+firebaseBom = "34.12.0"
+googleGmsGoogleServices = "4.4.4"
+firebaseCrashlyticsGradle = "3.0.6"
+retrofit = "3.0.0"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-storage = { module = "com.google.firebase:firebase-storage" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+# Retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+# Gson Converter
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlyticsGradle" }
